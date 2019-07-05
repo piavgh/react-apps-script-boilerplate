@@ -1,0 +1,35 @@
+{
+  "root": true,
+  "parser": "babel-eslint",
+  "extends": [
+    "plugin:react/recommended",
+    "eslint:recommended",
+    "google"
+  ],
+  "plugins": [
+    "babel",
+    "react",
+    "react-hooks"
+  ],
+  "env": {
+    "browser": true
+  },
+  "globals": {
+    "google": false,
+    "alert": false,
+    "css": true
+  },
+  "rules": {
+    "import/prefer-default-export": 0,
+    "no-console": 0,
+    "require-jsdoc": 0,
+    "semi": [
+      2,
+      "never"
+    ],
+    "no-invalid-this": 0,
+    "babel/no-invalid-this": 0,
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
+  }
+}

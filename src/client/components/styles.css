@@ -1,0 +1,10 @@
+html,
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+}
+
+#App {
+    /* Give app full page to work with */
+    height: 100vh;
+}
