@@ -4,12 +4,15 @@
   "extends": [
     "plugin:react/recommended",
     "eslint:recommended",
-    "google"
+    "airbnb",
+    "google",
+    "plugin:prettier/recommended"
   ],
   "plugins": [
     "babel",
     "react",
-    "react-hooks"
+    "react-hooks",
+    "prettier"
   ],
   "env": {
     "browser": true
@@ -17,9 +20,12 @@
   "globals": {
     "google": false,
     "alert": false,
-    "css": true
+    "css": true,
+    "console": true,
+    "process": true
   },
   "rules": {
+    "prettier/prettier": "error",
     "import/prefer-default-export": 0,
     "no-console": 0,
     "require-jsdoc": 0,

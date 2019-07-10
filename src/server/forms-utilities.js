@@ -8,21 +8,17 @@ const onOpen = () => {
 }
 
 const showSidebar = () => {
-  let ui = HtmlService.createHtmlOutputFromFile('sidebar').setTitle(
-    'React Apps Script Boilerplate',
+  const ui = HtmlService.createHtmlOutputFromFile('sidebar').setTitle(
+    'React Apps Script Boilerplate'
   )
   FormApp.getUi().showSidebar(ui)
 }
 
 const showAbout = () => {
-  let ui = HtmlService.createHtmlOutputFromFile('about')
+  const ui = HtmlService.createHtmlOutputFromFile('about')
     .setWidth(420)
     .setHeight(270)
   FormApp.getUi().showModalDialog(ui, 'About React Apps Script Boilerplate')
 }
 
-export {
-  onOpen,
-  showSidebar,
-  showAbout,
-}
+export { onOpen, showSidebar, showAbout }

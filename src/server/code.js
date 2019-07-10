@@ -1,4 +1,4 @@
-import * as publicFunctions from './forms-utilities.js'
+import * as publicFunctions from './forms-utilities'
 
 // Expose public functions
 global.onOpen = publicFunctions.onOpen
